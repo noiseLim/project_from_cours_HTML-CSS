@@ -1,0 +1,604 @@
+/****************************
+Common styles
+*****************************/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(255, 255, 255);
+	color: rgb(86, 78, 78);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-4-2 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 3%;
+  /*border: 1px solid red;*/
+}
+
+h1 {
+	margin: 0;
+}
+
+h2 {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+h2:after {
+	display: block;
+	height: 5px;
+	background-color: rgb(86, 78, 78);
+	content: " ";
+	width: 150px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+h3 {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+section {
+	padding: 100px 0;
+	clear: both;
+}
+.float-clearing {
+	zoom: 1;
+}
+
+.float-clearing:after {
+	zoom: 1;
+	content: " ";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+/****************************
+Header styles
+*****************************/
+
+header {
+	background-image: url(../images/les-priroda-doroga-derevia.jpg);
+	/*background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(../images/header-background-image2.jpg);*/
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h1 {
+	margin: 0;
+}
+
+.header-text {
+	padding-top: 300px;
+	text-align: center;
+}
+
+#logo-image {
+	height: 50px;
+	width: auto;
+	float: left;
+	margin-left: 40px;
+	margin-top: 8px;
+}
+
+#header-title {
+	/*max-width: 50%;*/
+	/*margin-left: 8.33%;*/
+	/*margin: auto;*/
+	background: #fff;
+	padding: 15px;
+	text-transform: uppercase;
+	/*color: #fff;*/
+	color: #171717;
+	letter-spacing: 0.1em;
+	font-size: 2.8vw;
+	line-height: 2.5vw;
+	font-weight: 400;
+	font-style: normal;
+	/*border: 3px solid #fff;*/
+}
+
+#header-buttons {
+	margin-top: 70px;
+	/*margin-left: 8.33%;*/
+	padding: 12px;
+}
+
+#logo-text {
+	float: left;
+}
+
+#main-nav {
+	float: right;
+	list-style: none;
+	letter-spacing: 2px;
+}
+
+#main-nav li {
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 0.9em;
+}
+
+#main-nav li a:link, 
+#main-nav li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #171717;
+	transition: color 0.3s;
+}
+
+#main-nav li a:hover, 
+#main-nav li a:active {
+	color: rgb(255, 114, 0);
+
+}
+
+#logo-text a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #171717;
+	letter-spacing: 12px;
+	padding-left: 15px;
+}
+
+nav {
+	background: #fff;
+	height: 70px;
+	padding: 23px;
+}
+
+#line {
+	text-align: center;
+	margin-top: 10px;
+	background: #fff;
+	padding: 5px;
+}
+
+/****************************
+Button styles
+*****************************/
+
+.button:link,
+.button:visited,
+input[type=submit] {
+	display: inline-block;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: #171717;
+	border-radius: 30px;
+	transition: background-color 0.3s, border 0.3s;
+}
+
+.button-read:link,
+.button-read:visited {
+	border: 2px solid #fff;
+	color: #fff;
+	font-weight: 500;
+}
+
+.button-contact:link,
+.button-contact:visited {
+	background: rgb(255, 114, 0);
+	color: #fff;
+	border: 2px solid rgb(255, 114, 0);
+}
+
+/*.button:hover,
+.button:active {
+}*/
+
+.button-read:hover,
+.button-read:active {
+	background: #fff;
+	border: 2px solid #fff;
+	color: rgb(255, 114, 0);
+
+}
+
+.button-contact:hover,
+.button-contact:active {
+	background: transparent;
+	border: 2px solid rgb(255, 114, 0);
+	color: #fff;
+}
+
+input[type=submit] {
+	background: rgb(255, 114, 0);
+	color: #fff;
+	border: 2px solid rgb(255, 114, 0);
+	width: 50%;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active{
+	background: transparent;
+	border: 2px solid rgb(255, 114, 0);
+	color: #171717;
+	width: 50%;
+}
+/****************************
+Features styles
+*****************************/
+
+#headline-text {
+	text-align: center;
+	margin: 50px 50px 20px 50px;
+	font-size: 100%;
+}
+ion-icon {
+	font-size: 64px;
+	color: rgb(255, 114, 0);
+}
+
+/*section p {
+	font-size: 90%;
+}*/
+
+/****************************
+Images styles
+*****************************/
+
+.images-container {
+	list-style: none;
+	width: 100%;
+}
+
+.images-container li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.photo-image {
+	width: 100%;
+	overflow: hidden;
+	background: #000;
+}
+
+.photo-image img {
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.2);
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.photo-image img:hover {
+	opacity: 1;
+	transform: scale(1.05);
+}
+
+/****************************
+How To Order styles
+*****************************/
+
+#phone-image {
+	width: 100%;
+}
+
+#phone-image-container {
+	margin-left: 20%;
+	/*margin-right: 3%;*/
+
+}
+.order-step {
+	margin-top: 3vw;
+
+}
+
+.order-step div {
+	color: rgb(255, 114, 0);
+	/*background: #171717;*/
+	border: 2px solid rgb(255, 114, 0);
+	width: 50px;
+	height: 50px;
+	border-radius: 150px;
+	text-align: center;
+	padding: 6px;
+	font-size: 150%;
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}
+
+.order-step p {
+	padding-top: 12px;
+}
+
+.app-button img {
+	height: 50px;
+	margin-right: 10px;
+}
+
+.order-step:last-of-type {
+	margin-bottom: 100px;
+}
+
+/****************************
+City styles
+*****************************/
+
+.col-4 img {
+	width: 100%;
+}
+
+
+
+.cities-info {
+	font-size: 90%;
+	font-weight: 400;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+
+/*.info-ikon {
+	display: inline-block;
+	width: 30px;
+	font-size: 64px;
+	color: rgb(255, 114, 0);
+}*/
+
+#cities-section {
+	background: #fccaa4;
+}
+
+/****************************
+Feedback styles
+*****************************/
+
+#feedback-section {
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/les-priroda-doroga-2.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	background-attachment: fixed;
+
+}
+
+blockquote {
+	font-style: italic;
+	font-weight: 300;
+	line-height: 150%;
+
+}
+cite {
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+blockquote div:before {
+	content: "	\00AB";
+	font-size: 30px;
+	/*line-height: 150%;*/
+}
+
+blockquote div:after {
+	content: "\00BB";
+	font-size: 30px;
+	/*line-height: 150%;*/
+}
+
+cite img {
+	display: inline-block;
+	width: 200px;
+	border: 2px solid rgb(255, 114, 0);
+	border-radius: 50%;
+}
+
+/****************************
+Contact form styles
+*****************************/
+
+#contact-form {
+	width: 40%;
+	margin: 0 auto;
+	font-size: 90%;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 5px;
+	border-radius: 5px;
+	border: 2px solid rgb(255, 114, 0);
+}
+}
+
+/*input[type=submit] {
+	width: 50%;
+	padding: 5px;
+	border-radius: 5px;
+}*/
+
+textarea {
+	height: 120px;
+}
+
+
+/****************************
+Footer styles styles
+*****************************/
+
+footer {
+	text-align: center;
+	padding: 50px 0;
+	background: linear-gradient(rgba(252, 202, 164, 1), rgba(252, 202, 164, 0.1))
+}
+
+footer p {
+	font-size: 70%;
+}
+
+#footer-social-links {
+	list-style: none;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+#footer-social-links li {
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 0.9em;
+
+}
+
+#footer-nav {
+	margin-bottom: 30px;
+}
+
+#footer-nav li a:link, 
+#footer-nav li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #171717;
+	transition: color 0.3s;
+	font-size: 70%;
+}
+
+#footer-nav li a:hover, 
+#footer-nav li a:active {
+	color: rgb(255, 114, 0);
+
+}
+
+#footer-social-links li a:link, 
+#footer-social-links li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #171717;
+	transition: color 0.3s;
+	font-size: 150%;
+	/*transform: scale(1);*/
+}
+
+
+
+#footer-social-links li a:hover, 
+#footer-social-links li a:active {
+	/*transform: scale(1.2);*/
+	color: rgb(255, 114, 0);
+	
+}
+
+
+/****************************
+Media Query styles
+*****************************/
+
+@media only screen and (max-width: 974px) {
+	[class*="col-"] {
+		width: 100%;
+	}
+
+
+	.button-contact {
+		margin-top: 10px;
+	}
+
+	#header-title {
+		letter-spacing: 0.1em;
+		font-size: 3vw;
+		line-height: 3vw;
+	}
+	#phone-image-container {
+		width: 60%;
+		/*margin: 0 auto;*/
+	}
+
+
+}
+
+@media only screen and (max-width: 616px) {
+	[class*="col-"] {
+		width: 100%;
+	}
+
+	#main-nav li a:link, 
+	#main-nav li a:visited {
+		color: #fff;
+	}
+
+	#main-nav li a:hover, 
+	#main-nav li a:active {
+		color: rgb(255, 114, 0);
+	}
+
+	#main-nav {
+		margin-top: 13px;
+	}
+
+	#header-title {
+		letter-spacing: 0.1em;
+		font-size: 4vw;
+		line-height: 3vw;
+	}
+
+	#contact-form {
+   		width: 80%;
+    	margin: 0 auto;
+    	font-size: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 452px) {
+	[class*="col-"] {
+		width: 100%;
+	}
+
+	#logo-text a {
+		color: #fff;
+	}
+
+	#logo-text {
+		margin-top: 20px;
+	}
+
+}
